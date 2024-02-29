@@ -26,6 +26,7 @@ export default function Menu() {
                 price={pizza.price}
               />
             ))}
+            <span>{pizzas.soldOut ? 'SOLD OUT' : pizzas.price}</span>
           </ul>
         </>
       ) : (
