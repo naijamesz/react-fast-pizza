@@ -2,7 +2,7 @@
 import React from 'react';
 export default function Pizza({ photoName, name, ingredients, price }) {
   return (
-    <li className='pizza'>
+    <li className={`pizza &{pizza.soldOut ? "sold-out : ""}`}>
       <img src={photoName} alt={name} />
       <div>
         <h2>{name}</h2>
